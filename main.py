@@ -3,6 +3,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 import numpy as np
 import pandas as pd
+from natsort import natsorted
 
 root = tk.Tk()
 root.withdraw()
@@ -27,11 +28,14 @@ print(str.format("There are {} files in {}.",len(files),dir))
 dfFilenames = pd.read_excel(dataImport)
 fileList = []
 
+
 if [*dfFilenames] == ['FileName']:
     for(_,filename) in dfFilenames.itertuples():
         fileList.append(filename)
+print("UnSorted:",files)
+files = natsorted(files)
+print("Sorted:",files)
 
-print(fileList)
 print(str.format("There are {} files in {} and {} names in the Excel Sheet",len(files),dir,len(fileList)))
 
 if len(files) == len(fileList):
