@@ -15,7 +15,7 @@ This is a simple Flask application that demonstrates asynchronous file upload pr
 - Turbo-Flask
 - UUID
 
-\## Installation
+## Installation
 
 1. Clone this repository:
 ```
