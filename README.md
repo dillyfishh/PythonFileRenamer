@@ -18,18 +18,15 @@ This is a simple Flask application that demonstrates asynchronous file upload pr
 ## Installation
 
 1. Clone this repository:
-```
-git clone https://github.com/yourgithubusername/yourrepositoryname
-```
+
 2. Install the necessary packages:
 ```
-pip install flask turbo_flask
+pip install -r requirements.txt
 ```
 3. Run the application:
 ```
-python main.py
+flask --app main.py
 ```
-Please replace `main.py` with your actual python filename.
 
 ## Usage
 
